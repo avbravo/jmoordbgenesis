@@ -49,6 +49,7 @@ import static com.mongodb.client.model.Indexes.descending;
 import com.mongodb.client.model.ReturnDocument;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.spi.CreationalContext;
 import jakarta.enterprise.inject.spi.Bean;
 import jakarta.enterprise.inject.spi.BeanManager;
@@ -65,6 +66,7 @@ import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.MethodDescriptor;
 import java.beans.PropertyDescriptor;
+import java.io.Serializable;
 import java.lang.invoke.MethodHandles;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -98,8 +100,8 @@ import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
  *
  * @author avbravo
  */
-//@ApplicationScoped
-public abstract class Repository<T> implements RepositoryBase {
+@ApplicationScoped
+public abstract class Repository<T> implements RepositoryBase , Serializable{
 //public interface Repository<T> implements RepositoryBase {
 // <editor-fold defaultstate="collapsed" desc="field">
 //invoca el @JmoordbProducer que tiene un metodo MongoClient mongoClient
