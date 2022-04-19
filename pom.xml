@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jmoordbgenesis</groupId>
     <artifactId>jmoordbgenesis</artifactId>
-    <version>0.1</version>
+    <version>1.0-11</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
@@ -135,9 +135,9 @@
                    <version>1.10</version>
         </dependency>
         <dependency>
-            <groupId>com.avbravo</groupId>
+            <groupId>com.jmoordbbase</groupId>
             <artifactId>jmoordbbase</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0-11</version>
         </dependency>
     </dependencies>
 
